@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-40 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
+    <header className="sticky top-0 z-40 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b shadow-[var(--shadow-soft)]">
       <nav className="container mx-auto flex items-center justify-between py-3" aria-label="Primary">
         <a href="#home" className="font-semibold tracking-tight text-lg">
           Shelter.Health

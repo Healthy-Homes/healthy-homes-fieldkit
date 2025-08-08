@@ -8,20 +8,37 @@ import FAQSection from "@/components/landing/FAQSection";
 import MailingListSection from "@/components/landing/MailingListSection";
 import ContactSection from "@/components/landing/ContactSection";
 import Footer from "@/components/landing/Footer";
+import FadeInOnScroll from "@/components/common/FadeInOnScroll";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main>
-        <Hero />
-        <AboutSection />
-        <FeaturesSection />
-        <TechnicalDetailsSection />
-        <PlannedEnhancementsSection />
-        <FAQSection />
-        <MailingListSection />
-        <ContactSection />
+        <FadeInOnScroll>
+          <Hero />
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <AboutSection />
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <FeaturesSection />
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <TechnicalDetailsSection />
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <PlannedEnhancementsSection />
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <FAQSection />
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <MailingListSection />
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <ContactSection />
+        </FadeInOnScroll>
       </main>
       <Footer />
     </div>
