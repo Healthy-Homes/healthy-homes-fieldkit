@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 const Navbar = () => {
   return (
@@ -15,14 +17,37 @@ const Navbar = () => {
           <li><a href="#contact" className="hover:underline">Contact</a></li>
         </ul>
         <div className="hidden md:block">
-          <Button asChild variant="default" size="sm">
+          <Button asChild variant="default" size="sm" className="hover-scale">
             <a href="#signup">Join mailing list</a>
           </Button>
         </div>
         <div className="md:hidden">
-          <Button asChild variant="outline" size="sm">
-            <a href="#signup">Updates</a>
-          </Button>
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon" aria-label="Open menu" className="hover-scale">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-72">
+              <SheetHeader>
+                <SheetTitle>Shelter.Health</SheetTitle>
+              </SheetHeader>
+              <nav className="mt-6">
+                <ul className="grid gap-4 text-base">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#tech">Technical</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+              <div className="mt-6">
+                <Button asChild variant="hero" size="lg" className="w-full hover-scale">
+                  <a href="#signup">Join mailing list</a>
+                </Button>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
     </header>

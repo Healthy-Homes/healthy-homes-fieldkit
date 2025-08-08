@@ -13,10 +13,10 @@ const Hero = () => {
             Multilingual, mobile-first tool for healthy housing checklists and Social Determinants of Health (SDOH) data. Export to PDF and HL7® FHIR® with privacy-first, stateless sharing.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button asChild variant="hero" size="lg">
+            <Button asChild variant="hero" size="lg" className="hover-scale">
               <a href="#signup" aria-label="Join the Shelter.Health mailing list">Join mailing list</a>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" size="lg" className="hover-scale">
               <a href="https://github.com/mattulsh/healthy-homes-app-rebuilt" target="_blank" rel="noopener noreferrer" aria-label="View Shelter.Health on GitHub">View on GitHub</a>
             </Button>
           </div>

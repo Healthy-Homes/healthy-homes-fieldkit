@@ -24,7 +24,7 @@ const MailingListSection = () => {
           className="flex-1 h-11 rounded-md border bg-background px-4"
           aria-label="Email address"
         />
-        <Button type="submit" variant="hero" size="default">
+        <Button type="submit" variant="hero" size="lg" className="hover-scale">
           Join
         </Button>
       </form>
