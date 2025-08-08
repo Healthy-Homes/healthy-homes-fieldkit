@@ -1,14 +1,8 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+
+# Crawl-delay (optional): adjust for heavy traffic
+# Crawl-delay: 10
+
+Sitemap: https://shelterhealth.app/sitemap.xml
+Host: shelterhealth.app
