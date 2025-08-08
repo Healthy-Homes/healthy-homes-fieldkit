@@ -11,13 +11,6 @@ const ContactSection = () => {
         <p>
           Email: <a className="underline" href="mailto:hello@shelterhealth.app">hello@shelterhealth.app</a>
         </p>
-        <p>
-          GitHub: <a className="underline" href="https://github.com/mattulsh/healthy-homes-app-rebuilt" target="_blank" rel="noopener noreferrer">mattulsh/healthy-homes-app-rebuilt</a>
-        </p>
-        <p>Project lead: Matthew Ulsh, MPH</p>
-        <p>
-          Blog (coming soon): <a className="underline" href="#">shelterhealth.app/blog</a>
-        </p>
       </div>
     </section>
   );

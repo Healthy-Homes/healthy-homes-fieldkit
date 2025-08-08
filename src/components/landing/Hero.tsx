@@ -16,9 +16,6 @@ const Hero = () => {
             <Button asChild variant="hero" size="lg" className="hover-scale">
               <a href="#signup" aria-label="Join the Shelter.Health mailing list">Join mailing list</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="hover-scale">
-              <a href="https://github.com/mattulsh/healthy-homes-app-rebuilt" target="_blank" rel="noopener noreferrer" aria-label="View Shelter.Health on GitHub">View on GitHub</a>
-            </Button>
           </div>
         </div>
         <figure className="relative rounded-xl border bg-card shadow-[var(--shadow-soft)] p-4">
