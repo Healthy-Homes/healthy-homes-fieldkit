@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: npm run build
         
-      - name: List build output (debug)
+      - name: List build output
         run: ls -la dist/
         
       - name: Setup Pages
@@ -50,10 +50,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
