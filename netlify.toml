@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/assess/*"
+  to = "https://shelterhealth.netlify.app/:splat"
+  status = 200
+  force = true
