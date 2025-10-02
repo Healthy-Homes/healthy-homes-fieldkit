@@ -1,4 +1,10 @@
 [[redirects]]
+  from = "/assess"
+  to = "https://shelterhealth.netlify.app/"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/assess/*"
   to = "https://shelterhealth.netlify.app/:splat"
   status = 200
