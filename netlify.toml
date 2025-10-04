@@ -1,9 +1,0 @@
-[[redirects]]
-  from = "/assess"
-  to = "https://shelterhealth.netlify.app/"
-  status = 301
-
-[[redirects]]
-  from = "/assess/*"
-  to = "https://shelterhealth.netlify.app/:splat"
-  status = 301
