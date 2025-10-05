@@ -14,6 +14,9 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild variant="hero" size="lg" className="hover-scale">
+              <a href="https://assess.shelterhealth.app" aria-label="Launch the Shelter.Health assessment app">Launch App</a>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="hover-scale">
               <a href="#signup" aria-label="Join the Shelter.Health mailing list">Join mailing list</a>
             </Button>
           </div>
