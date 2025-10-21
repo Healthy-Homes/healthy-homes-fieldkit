@@ -3,13 +3,7 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <section id="home" className="relative overflow-hidden">
-      {/* Preload critical hero image */}
-      <link 
-        rel="preload" 
-        as="image" 
-        href="/og-image.webp"
-        fetchPriority="high"
-      />
+      {/* REMOVED the preload link - it goes in index.html instead */}
       
       <div className="absolute inset-0 -z-10 bg-[image:var(--gradient-hero)] bg-[length:200%_200%] animate-gradient-move opacity-30" aria-hidden="true" />
       
