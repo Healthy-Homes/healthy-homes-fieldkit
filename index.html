@@ -3,25 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- CRITICAL: Preload hero image for LCP optimization -->
+    <link rel="preload" as="image" href="/og-image-large.webp" fetchpriority="high" media="(min-width: 769px)" />
+    <link rel="preload" as="image" href="/og-image-medium.webp" fetchpriority="high" media="(max-width: 768px)" />
+    
     <title>Shelter.Health — Healthy Homes App</title>
     <meta name="description" content="Healthy housing checklist & SDOH data tool with FHIR integration, PDF/QR export, multilingual, privacy-first." />
     <meta name="author" content="Matthew Ulsh, MPH" />
     <link rel="canonical" href="https://shelterhealth.app" />
-
-    <!-- Open Graph -->
+    
+    <!-- Open Graph - Updated to WebP -->
     <meta property="og:title" content="Shelter.Health — Healthy Homes App" />
     <meta property="og:description" content="Healthy housing checklist & SDOH data tool with FHIR integration, PDF/QR export, multilingual, privacy-first." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://shelterhealth.app" />
-    <meta property="og:image" content="https://shelterhealth.app/og-image.jpg" />
-
-    <!-- Twitter -->
+    <meta property="og:image" content="https://shelterhealth.app/og-image-large.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1008" />
+    
+    <!-- Twitter - Updated to WebP -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Shelter.Health — Healthy Homes App" />
     <meta name="twitter:description" content="Healthy housing checklist & SDOH data tool with FHIR integration, PDF/QR export, multilingual, privacy-first." />
-    <meta name="twitter:image" content="https://shelterhealth.app/og-image.jpg" />
-
-    <!-- JSON-LD Structured Data  -->
+    <meta name="twitter:image" content="https://shelterhealth.app/og-image-large.webp" />
+    
+    <!-- JSON-LD Structured Data - Updated to WebP -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -36,7 +44,7 @@
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
         "keywords": "healthy housing checklist, home health inspection app, SDOH data collection tool, public health housing app, FHIR integration for housing",
         "softwareVersion": "1.0",
-        "image": "https://shelterhealth.app/og-image.jpg",
+        "image": "https://shelterhealth.app/og-image-large.webp",
         "sameAs": ["https://github.com/mattulsh/healthy-homes-app-rebuilt"],
         "featureList": [
           "Home inspection aligned with HUD Healthy Home principles",
@@ -47,8 +55,8 @@
         ]
       }
     </script>
-
-   <!-- Microsoft Clarity - Temporarily disabled -->
+    
+    <!-- Microsoft Clarity - Temporarily disabled -->
     <!--
     <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -59,7 +67,6 @@
     </script>
     -->
   </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
