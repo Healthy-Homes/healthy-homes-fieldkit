@@ -3,7 +3,16 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <section id="home" className="relative overflow-hidden">
+      {/* Preload critical hero image */}
+      <link 
+        rel="preload" 
+        as="image" 
+        href="/og-image.webp"
+        fetchPriority="high"
+      />
+      
       <div className="absolute inset-0 -z-10 bg-[image:var(--gradient-hero)] bg-[length:200%_200%] animate-gradient-move opacity-30" aria-hidden="true" />
+      
       <div className="container mx-auto grid md:grid-cols-2 gap-10 items-center py-16 md:py-24">
         <div>
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
@@ -21,14 +30,22 @@ const Hero = () => {
             </Button>
           </div>
         </div>
+        
         <figure className="relative rounded-xl border bg-card shadow-[var(--shadow-soft)] p-4">
           <img
-            src="/og-image.jpg"
+            srcSet="
+              /og-image-small.webp 640w,
+              /og-image-medium.webp 1024w,
+              /og-image-large.webp 1920w
+            "
+            sizes="(max-width: 768px) 100vw, 50vw"
+            src="/og-image-large.webp"
             alt="Shelter.Health app preview showing a guided healthy housing checklist, photo capture, and Social Determinants of Health data entry"
-            loading="lazy"
             width={1200}
             height={630}
-            sizes="(max-width: 768px) 100vw, 560px"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
             className="rounded-lg w-full h-auto object-cover"
           />
           <figcaption className="sr-only">Illustration of the Shelter.Health app concept</figcaption>
