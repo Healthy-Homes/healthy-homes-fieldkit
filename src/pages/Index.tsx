@@ -28,41 +28,17 @@ const Index = () => {
         {/* Hero loads immediately without FadeInOnScroll - Critical for LCP */}
         <Hero />
         
-        {/* Lazy load everything below the fold */}
+        {/* Load first section immediately after hero */}
         <Suspense fallback={<SectionLoader />}>
           <FadeInOnScroll>
             <AboutSection />
           </FadeInOnScroll>
-          
+        </Suspense>
+        
+        {/* Load second group of sections */}
+        <Suspense fallback={<SectionLoader />}>
           <FadeInOnScroll>
             <FeaturesSection />
           </FadeInOnScroll>
           
           <FadeInOnScroll>
-            <TechnicalDetailsSection />
-          </FadeInOnScroll>
-          
-          <FadeInOnScroll>
-            <PlannedEnhancementsSection />
-          </FadeInOnScroll>
-          
-          <FadeInOnScroll>
-            <FAQSection />
-          </FadeInOnScroll>
-          
-          <FadeInOnScroll>
-            <MailingListSection />
-          </FadeInOnScroll>
-          
-          <FadeInOnScroll>
-            <ContactSection />
-          </FadeInOnScroll>
-          
-          <Footer />
-        </Suspense>
-      </main>
-    </div>
-  );
-};
-
-export default Index;
