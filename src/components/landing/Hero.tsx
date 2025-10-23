@@ -27,21 +27,14 @@ const Hero = () => {
         
         <figure className="relative rounded-xl border bg-card shadow-[var(--shadow-soft)] p-4">
           <img
-            srcSet="
-              /og-image-small.webp 640w,
-              /og-image-medium.webp 1024w,
-              /og-image-large.webp 1920w
-            "
-            sizes="(max-width: 768px) 100vw, 50vw"
-            src="/og-image-large.webp"
-            alt="Shelter.Health app preview showing a guided healthy housing checklist, photo capture, and Social Determinants of Health data entry"
-            width={1200}
-            height={630}
-            loading="eager"
-            fetchPriority="high"
-            decoding="async"
-            className="rounded-lg w-full h-auto object-cover"
-          />
+  src="/og-image.jpg"
+  alt="Shelter.Health app preview showing a guided healthy housing checklist, photo capture, and Social Determinants of Health data entry"
+  width={1200}
+  height={630}
+  loading="eager"
+  fetchpriority="high"
+  className="rounded-lg w-full h-auto object-cover"
+/>
           <figcaption className="sr-only">Illustration of the Shelter.Health app concept</figcaption>
         </figure>
       </div>
