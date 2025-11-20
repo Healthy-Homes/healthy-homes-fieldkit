@@ -17,10 +17,10 @@ const Navbar = () => {
           <li><a href="#contact" className="hover:underline">Contact</a></li>
         </ul>
         <div className="hidden md:block">
-          <Button asChild variant="default" size="sm" className="hover-scale">
-            <a href="#signup">Join mailing list</a>
-          </Button>
-        </div>
+  <Button asChild variant="default" size="sm" className="hover-scale">
+    <a href="https://assess.shelterhealth.app">Launch App</a>
+  </Button>
+</div>
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
@@ -42,10 +42,10 @@ const Navbar = () => {
                 </ul>
               </nav>
               <div className="mt-6">
-                <Button asChild variant="hero" size="lg" className="w-full hover-scale">
-                  <a href="#signup">Join mailing list</a>
-                </Button>
-              </div>
+  <Button asChild variant="hero" size="lg" className="w-full hover-scale">
+    <a href="https://assess.shelterhealth.app">Launch App</a>
+  </Button>
+</div>
             </SheetContent>
           </Sheet>
         </div>
