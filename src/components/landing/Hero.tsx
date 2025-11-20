@@ -20,7 +20,7 @@ const Hero = () => {
               <a href="https://assess.shelterhealth.app" aria-label="Launch the Shelter.Health assessment app">Launch App</a>
             </Button>
             <Button asChild variant="outline" size="lg" className="hover-scale">
-              <a href="#signup" aria-label="Join the Shelter.Health mailing list">Join mailing list</a>
+                <a href="#contact" aria-label="Contact Shelter.Health">Contact Us</a>
             </Button>
           </div>
         </div>
