@@ -53,8 +53,6 @@ const FeaturesSection = () => {
           accentVar="brand"
           points={[
             "Guided healthy housing checklist (HUD-aligned)",
-            "Photo capture with embedded consent notes",
-            "Geolocation with environmental overlays",
             "Multilingual workflows (EN/Traditional Chinese)",
           ]}
         />
@@ -76,7 +74,6 @@ const FeaturesSection = () => {
           points={[
             "PDF reports with summary and photos",
             "HL7® FHIR® JSON export",
-            "QR-code sharing for stateless handoff",
             "Clean JSON for analytics",
           ]}
         />
