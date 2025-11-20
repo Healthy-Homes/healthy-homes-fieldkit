@@ -9,7 +9,6 @@ const FeaturesSection = lazy(() => import("@/components/landing/FeaturesSection"
 const TechnicalDetailsSection = lazy(() => import("@/components/landing/TechnicalDetailsSection"));
 const PlannedEnhancementsSection = lazy(() => import("@/components/landing/PlannedEnhancementsSection"));
 const FAQSection = lazy(() => import("@/components/landing/FAQSection"));
-const MailingListSection = lazy(() => import("@/components/landing/MailingListSection"));
 const ContactSection = lazy(() => import("@/components/landing/ContactSection"));
 const Footer = lazy(() => import("@/components/landing/Footer"));
 
@@ -41,9 +40,7 @@ const Index = () => {
             <FAQSection />
           </FadeInOnScroll>
           
-          <FadeInOnScroll>
-            <MailingListSection />
-          </FadeInOnScroll>
+          
           
           <FadeInOnScroll>
             <ContactSection />
